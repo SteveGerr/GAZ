@@ -1,0 +1,114 @@
+.search-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    width: 100%
+    padding: 30px 0px
+    background-image: url("/img/header/gazele-next_conv.jpg")
+    background-size: cover
+    background-position: left
+    background-repeat: no-repeat
+    background-attachment: fixed
+    box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.42) inset
+    &::after
+        content: ''
+        display: block
+        width: 100%
+        height: 100%
+        background-color: #fff
+    .h2
+        color: $textColor
+        padding: 10px 25px
+        font-size: 35px
+        align-self: flex-start
+        p
+            font-size: medium
+    .search
+        width: 100%
+        margin-top: 85px 
+    form
+        width: 100%
+
+.search-wrapper__bgfon
+    width: 100%
+    height: 100%
+    background-color: #fff
+
+.border
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 10px 10px
+    margin-right: 0px
+    width: 98%
+    input
+        height: 50px
+        width: 100%
+        padding-left: 75px
+        text-align: center
+        font-size: larger
+        color: white
+        border: 1px solid #2152b1ad
+        background-color: #7d78757a
+        &::placeholder
+            color: white
+            opacity: 1    
+
+.voice-btn
+    border: 0px solid white
+    margin: 10px
+    cursor: pointer
+    background-color: #00359200
+    &:hover
+        background-color: #4682b48f  
+        border: 1px solid #2152b1ad  
+        margin: 9px   
+    svg
+        height: 30px
+        width: 30px
+        background-color: #4682b48f
+        &:hover
+            color: white     
+.btn-search
+    display: flex;
+    justify-content: center
+    align-items: center
+    button
+        width: 50%
+        height: 50px
+        background-color: #2152b17d
+        border: 1px solid #ffffff5e
+        cursor: pointer
+        color: white
+        &:hover
+            font-size: 1em
+
+@media (max-width: 455px)
+    .search-wrapper
+        .search
+            margin-top: 0px!important
+
+@media (max-width: 630px)
+
+    .search-wrapper
+        min-height: 15%
+        background-image: url("/img/header/gazele-next630.jpg")
+        background-size: auto
+        background-position: inherit
+        background-repeat: no-repeat
+        background-attachment: fixed
+        .h2
+            font-size: 15px
+        .search
+            margin-top: 10px
+
+    input
+        &::placeholder
+            font-size: 15px
+
+
+
+@media (min-width: 1340px)
+    .search-wrapper
+        min-height: 46%

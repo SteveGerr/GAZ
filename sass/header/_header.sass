@@ -1,0 +1,44 @@
+$textColor: #ffffff
+
+.header-wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    background-color: #16397C
+    color: $textColor
+    width: 100%
+    box-shadow: 1px -3px 50px black
+    font-family: 'Seymour One', sans-serif
+
+.logo
+    display: flex
+    justify-items: flex-start
+    background-image: url("../img/logo/logo.png")
+    background-position: center
+    background-size: cover
+    width: 100px
+    height: 100px    
+
+.header-wrap__contacts
+    color: $textColor
+    a 
+        text-decoration: none
+        color: $textColor
+
+.header-wrap__company
+    font-family: 'Seymour One', sans-serif
+    font-weight: 700
+
+
+@media (max-width: 800px)
+    .logo
+        width: 48px
+        height: 48px
+    .header-wrap__company
+        font-size: 0.5em
+    .header-wrap__contacts
+        font-size: 0.7em
+@media (max-width: 425px)
+    .header-wrap__contacts
+        font-size: 0.5em
